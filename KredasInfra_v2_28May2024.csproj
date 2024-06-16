@@ -1,0 +1,299 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81C2332A-CFA3-4506-88E8-930E10BA05E7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KredasInfra_v2_28May2024</RootNamespace>
+    <AssemblyName>KredasInfra_v2_28May2024</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44314</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\kredasit - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\kredasit - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BusinessAssociateRegistration.aspx" />
+    <Content Include="CoordinatorRegistration.aspx" />
+    <Content Include="FranchiseRegistration.aspx" />
+    <Content Include="images\1a.jpg" />
+    <Content Include="images\about-header-img.jpg" />
+    <Content Include="images\about-image.jpg" />
+    <Content Include="images\about-img-1.jpg" />
+    <Content Include="images\about-img-2.jpg" />
+    <Content Include="images\architecture.png" />
+    <Content Include="images\careers-header-img %281%29.jpg" />
+    <Content Include="images\contact-header-img.jpg" />
+    <Content Include="images\engineering.png" />
+    <Content Include="images\facebook-icon.png" />
+    <Content Include="images\general-contract.png" />
+    <Content Include="images\icon-1.png" />
+    <Content Include="images\icon-2.png" />
+    <Content Include="images\icon-3.png" />
+    <Content Include="images\infrastructure.png" />
+    <Content Include="images\instagram-icon.png" />
+    <Content Include="images\kredas-infra-footerlogo.png" />
+    <Content Include="images\kredas-infra-logo.png" />
+    <Content Include="images\KredasInfra-Login-bg - Copy.jpg" />
+    <Content Include="images\KredasInfra-Login-bg.jpg" />
+    <Content Include="images\linkdin-icon.png" />
+    <Content Include="images\privacy-policy.jpg" />
+    <Content Include="images\projects-header-img.jpg" />
+    <Content Include="images\review-pic-1.png" />
+    <Content Include="images\review-pic-2.png" />
+    <Content Include="images\review-pic-3.png" />
+    <Content Include="images\search-icon.png" />
+    <Content Include="images\services-header-img.jpg" />
+    <Content Include="images\services-image.jpg" />
+    <Content Include="images\services-img-1.jpg" />
+    <Content Include="images\services-img-2.jpg" />
+    <Content Include="images\services-img-3.jpg" />
+    <Content Include="images\services-img-4.jpg" />
+    <Content Include="images\services-img-5.jpg" />
+    <Content Include="images\services-img-6.jpg" />
+    <Content Include="images\services-img-7.jpg" />
+    <Content Include="images\slider-1.jpg" />
+    <Content Include="images\slider-2.jpg" />
+    <Content Include="images\slider-3.jpg" />
+    <Content Include="images\slider-4.jpg" />
+    <Content Include="images\slider-5.jpg" />
+    <Content Include="images\terms-banner.jpg" />
+    <Content Include="images\twitter-icon.png" />
+    <Content Include="Interview_task\1.KredasInfra-Home %281%29.jpg" />
+    <Content Include="Interview_task\images\1a.jpg" />
+    <Content Include="Interview_task\images\about-header-img.jpg" />
+    <Content Include="Interview_task\images\about-image.jpg" />
+    <Content Include="Interview_task\images\about-img-1.jpg" />
+    <Content Include="Interview_task\images\about-img-2.jpg" />
+    <Content Include="Interview_task\images\architecture.png" />
+    <Content Include="Interview_task\images\careers-header-img %281%29.jpg" />
+    <Content Include="Interview_task\images\contact-header-img.jpg" />
+    <Content Include="Interview_task\images\engineering.png" />
+    <Content Include="Interview_task\images\facebook-icon.png" />
+    <Content Include="Interview_task\images\general-contract.png" />
+    <Content Include="Interview_task\images\icon-1.png" />
+    <Content Include="Interview_task\images\icon-2.png" />
+    <Content Include="Interview_task\images\icon-3.png" />
+    <Content Include="Interview_task\images\infrastructure.png" />
+    <Content Include="Interview_task\images\instagram-icon.png" />
+    <Content Include="Interview_task\images\kredas-infra-footerlogo.png" />
+    <Content Include="Interview_task\images\kredas-infra-logo.png" />
+    <Content Include="Interview_task\images\linkdin-icon.png" />
+    <Content Include="Interview_task\images\privacy-policy.jpg" />
+    <Content Include="Interview_task\images\projects-header-img.jpg" />
+    <Content Include="Interview_task\images\review-pic-1.png" />
+    <Content Include="Interview_task\images\review-pic-2.png" />
+    <Content Include="Interview_task\images\review-pic-3.png" />
+    <Content Include="Interview_task\images\search-icon.png" />
+    <Content Include="Interview_task\images\services-header-img.jpg" />
+    <Content Include="Interview_task\images\services-image.jpg" />
+    <Content Include="Interview_task\images\services-img-1.jpg" />
+    <Content Include="Interview_task\images\services-img-2.jpg" />
+    <Content Include="Interview_task\images\services-img-3.jpg" />
+    <Content Include="Interview_task\images\services-img-4.jpg" />
+    <Content Include="Interview_task\images\services-img-5.jpg" />
+    <Content Include="Interview_task\images\services-img-6.jpg" />
+    <Content Include="Interview_task\images\services-img-7.jpg" />
+    <Content Include="Interview_task\images\slider-1.jpg" />
+    <Content Include="Interview_task\images\slider-2.jpg" />
+    <Content Include="Interview_task\images\slider-3.jpg" />
+    <Content Include="Interview_task\images\slider-4.jpg" />
+    <Content Include="Interview_task\images\slider-5.jpg" />
+    <Content Include="Interview_task\images\terms-banner.jpg" />
+    <Content Include="Interview_task\images\twitter-icon.png" />
+    <Content Include="karthik\aboutus.html" />
+    <Content Include="karthik\careers.html" />
+    <Content Include="karthik\contactus.html" />
+    <Content Include="karthik\css\bootstrap.min.css" />
+    <Content Include="karthik\css\custom.css" />
+    <Content Include="karthik\css\responsive.css" />
+    <Content Include="karthik\images\about-header-img.jpg" />
+    <Content Include="karthik\images\about-image.jpg" />
+    <Content Include="karthik\images\about-img-1.jpg" />
+    <Content Include="karthik\images\about-img-2.jpg" />
+    <Content Include="karthik\images\architecture.png" />
+    <Content Include="karthik\images\banner.jpg" />
+    <Content Include="karthik\images\careers-header-img %281%29.jpg" />
+    <Content Include="karthik\images\contact-header-img.jpg" />
+    <Content Include="karthik\images\engineering.png" />
+    <Content Include="karthik\images\facebook-icon.png" />
+    <Content Include="karthik\images\freepik-export-20240507042735iVIc.jpeg" />
+    <Content Include="karthik\images\freepik-export-20240507042848vb2a.jpeg" />
+    <Content Include="karthik\images\freepik-export-20240507043124OEUL.jpeg" />
+    <Content Include="karthik\images\freepik-export-20240507043216aOzX.jpeg" />
+    <Content Include="karthik\images\freepik-export-20240507043350gPrD.jpeg" />
+    <Content Include="karthik\images\freepik-export-20240507043424QZxe.jpeg" />
+    <Content Include="karthik\images\general-contract.png" />
+    <Content Include="karthik\images\icon-1.png" />
+    <Content Include="karthik\images\icon-2.png" />
+    <Content Include="karthik\images\icon-3.png" />
+    <Content Include="karthik\images\infrastructure.png" />
+    <Content Include="karthik\images\instagram-icon.png" />
+    <Content Include="karthik\images\kredas-infra-footerlogo.png" />
+    <Content Include="karthik\images\kredas-infra-logo.png" />
+    <Content Include="karthik\images\linkdin-icon.png" />
+    <Content Include="karthik\images\privacy-policy.jpg" />
+    <Content Include="karthik\images\projects-header-img.jpg" />
+    <Content Include="karthik\images\review-pic-1.png" />
+    <Content Include="karthik\images\review-pic-2.png" />
+    <Content Include="karthik\images\review-pic-3.png" />
+    <Content Include="karthik\images\search-icon.png" />
+    <Content Include="karthik\images\services-header-img.jpg" />
+    <Content Include="karthik\images\services-image.jpg" />
+    <Content Include="karthik\images\services-img-1.jpg" />
+    <Content Include="karthik\images\services-img-2.jpg" />
+    <Content Include="karthik\images\services-img-3.jpg" />
+    <Content Include="karthik\images\services-img-4.jpg" />
+    <Content Include="karthik\images\services-img-5.jpg" />
+    <Content Include="karthik\images\services-img-6.jpg" />
+    <Content Include="karthik\images\services-img-7.jpg" />
+    <Content Include="karthik\images\slider-1.jpg" />
+    <Content Include="karthik\images\slider-2.jpg" />
+    <Content Include="karthik\images\slider-3.jpg" />
+    <Content Include="karthik\images\slider-4.jpg" />
+    <Content Include="karthik\images\slider-5.jpg" />
+    <Content Include="karthik\images\terms-banner.jpg" />
+    <Content Include="karthik\images\twitter-icon.png" />
+    <Content Include="karthik\index.html" />
+    <Content Include="karthik\js\bootstrap.bundle.min.js" />
+    <Content Include="karthik\js\script.js" />
+    <Content Include="karthik\js\tab_slide.js" />
+    <Content Include="karthik\privacy_policies.html" />
+    <Content Include="karthik\projects.html" />
+    <Content Include="karthik\projects1.html" />
+    <Content Include="karthik\services.html" />
+    <Content Include="karthik\terms&amp;conditions.html" />
+    <Content Include="loginPage.aspx" />
+    <Content Include="MyAccount.aspx" />
+    <Content Include="UserRegistration.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessAssociateRegistration.aspx.cs">
+      <DependentUpon>BusinessAssociateRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessAssociateRegistration.aspx.designer.cs">
+      <DependentUpon>BusinessAssociateRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SQlStrings.cs" />
+    <Compile Include="CoordinatorRegistration.aspx.cs">
+      <DependentUpon>CoordinatorRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoordinatorRegistration.aspx.designer.cs">
+      <DependentUpon>CoordinatorRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FranchiseRegistration.aspx.cs">
+      <DependentUpon>FranchiseRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FranchiseRegistration.aspx.designer.cs">
+      <DependentUpon>FranchiseRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginPage.aspx.cs">
+      <DependentUpon>loginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginPage.aspx.designer.cs">
+      <DependentUpon>loginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount.aspx.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAccount.aspx.designer.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserRegistration.aspx.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRegistration.aspx.designer.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65513</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44314/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

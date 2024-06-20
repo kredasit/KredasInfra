@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/KredasInfra_v2_28May2024/config
+/.vs/KredasInfra_v2_28May2024
+/bin
+/obj/Debug
